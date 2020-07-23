@@ -139,7 +139,7 @@ xPDO::__construct($dsn, $username= '', $password= '', $options= array(), $driver
 
 Итак предположим, что нам нужно соединиться с базой данной 'text' на localhost с портом 3306, в кодировке utf-8:
 ```
-$dsn = 'mysql:host=localhost;dbname=test;port=3306;charset=utf-8';
+$dsn = 'mysql:host=localhost;dbname=test;port=3306;charset=utf8';
 $xpdo = new xPDO($dsn,'username','password');
 ```
 И готово!
@@ -165,7 +165,7 @@ $username = 'your_username';
 $password = 'your_password';
 $dbname = 'your_database';
 $port = 3306;
-$charset = 'utf-8';
+$charset = 'utf8';
 
 $dsn = "mysql:host=$host;dbname=$dbname;port=$port;charset=$charset";
 $xpdo = new xPDO($dsn, $username, $password);
